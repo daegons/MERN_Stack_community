@@ -1,22 +1,22 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Heading = () => {
   return (
     <div
       style={{
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        width: '100%',
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        width: "100%",
       }}
     >
-      <h1>Heading(헬로 리엑트)</h1>
+      <h1>Heading(React)</h1>
       <div
         style={{
-          display: 'flex',
-          justifyContent: 'space-between',
-          width: '50%',
+          display: "flex",
+          justifyContent: "space-between",
+          width: "50%",
         }}
       >
         <Link to="/">home</Link>
