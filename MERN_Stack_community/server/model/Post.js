@@ -1,12 +1,13 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const postSchema = new mongoose.Schema(
   {
     title: String,
     content: String,
+    postNum: Number,
   },
-  { collection: 'Posts' }
+  { collection: "posts" }
 );
-const Post = mongoose.model('Post', postSchema);
+const Post = mongoose.model("posts", postSchema);
 
 module.exports = { Post };

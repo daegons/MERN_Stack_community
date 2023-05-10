@@ -70,9 +70,22 @@ const UploadButtonDiv = styled.div`
     font-family: 'Yeon Sung', cursive;
     transition: all 0.4s;
     &:hover {
-      background: rgb(47, 50, 55);
+      background: rgb(35, 37, 41);
       color: white;
       border: none;
+    }
+    &.cancel {
+      margin-right: 10px;
+      border-radius: 6px;
+      padding: 5px 10px;
+      background: rgb(73, 76, 84);
+      color: white;
+      border: none;
+      &:hover {
+        background: rgb(35, 37, 41);
+        color: white;
+        border: none;
+      }
     }
   }
 `;

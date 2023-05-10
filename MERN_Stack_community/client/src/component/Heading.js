@@ -1,9 +1,9 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 //bootstrap
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
 
 const Heading = () => {
   const font = { fontFamily: "'Yeon Sung', cursive" };
@@ -19,10 +19,10 @@ const Heading = () => {
             <Link
               to="/"
               style={{
-                textDecoration: 'none',
-                color: 'white',
+                textDecoration: "none",
+                color: "white",
                 fontFamily: "'Yeon Sung', cursive",
-                marginRight: '10px',
+                marginRight: "10px",
               }}
             >
               home
@@ -30,9 +30,9 @@ const Heading = () => {
             <Link
               to="/upload"
               style={{
-                textDecoration: 'none',
-                color: 'white',
-                marginRight: '10px',
+                textDecoration: "none",
+                color: "white",
+                marginRight: "10px",
               }}
             >
               upload
@@ -41,9 +41,9 @@ const Heading = () => {
             <Link
               to="/"
               style={{
-                textDecoration: 'none',
-                color: 'white',
-                marginRight: '10px',
+                textDecoration: "none",
+                color: "white",
+                marginRight: "10px",
               }}
             >
               list

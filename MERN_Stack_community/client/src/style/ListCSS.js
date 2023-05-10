@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 
 const ListDiv = styled.div`
   padding: 1rem 0px;
@@ -17,6 +17,7 @@ const ListItem = styled.div`
   padding: 20px;
   box-shadow: 0px 19px 38px rgba(0, 0, 0, 0.03),
     0px 15px 12px rgba(0, 0, 0, 0.1);
+  //Link태그  = a태그
   a {
     color: black;
     text-decoration: none;
