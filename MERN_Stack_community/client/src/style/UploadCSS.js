@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from "@emotion/styled";
 /* font-family: "Yeon Sung", cursive;
 font-family: "Nanum Pen Script", cursive; 가장 아래 왼쪽부터 속성을 따름 */
 const UploadDiv = styled.div`
@@ -12,23 +12,25 @@ const UploadForm = styled.form`
   flex-direction: column;
   width: 80%;
   margin: 0 auto;
-  input {
+  #title {
     border-radius: 6px;
     border: 1px solid #c6c6c6;
+    margin-bottom: 10px;
     padding: 10px;
-    font-family: 'Nanum Pen Script';
+    font-family: "Nanum Pen Script";
     &:active,
     &:focus {
       outline: none;
     }
   }
+
   textarea {
     min-height: 350px;
     resize: none;
     border-radius: 6px;
     border: 1px solid #c6c6c6;
     padding: 10px;
-    font-family: 'Nanum Pen Script';
+    font-family: "Nanum Pen Script";
     &:active,
     &:focus {
       outline: none;
@@ -53,7 +55,7 @@ const UploadForm = styled.form`
   label {
     font-weight: bold;
     margin-top: 10px;
-    font-family: 'Yeon Sung', cursive;
+    font-family: "Yeon Sung", cursive;
   }
 `;
 
@@ -67,7 +69,7 @@ const UploadButtonDiv = styled.div`
     background: rgb(73, 76, 84);
     color: white;
     border: none;
-    font-family: 'Yeon Sung', cursive;
+    font-family: "Yeon Sung", cursive;
     transition: all 0.4s;
     &:hover {
       background: rgb(35, 37, 41);

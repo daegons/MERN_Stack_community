@@ -1,30 +1,33 @@
-import { useState } from 'react';
-import { UploadDiv, UploadForm, UploadButtonDiv } from '../../style/UploadCSS';
-import axios from 'axios';
-import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
+import { UploadDiv, UploadForm, UploadButtonDiv } from "../../style/UploadCSS";
+import axios from "axios";
+import { useNavigate } from "react-router-dom";
+import ImageUpload from "./ImageUpload";
 const Upload = (props) => {
-  const [title, setTitle] = useState('');
-  const [content, setContent] = useState('');
+  const [title, setTitle] = useState("");
+  const [content, setContent] = useState("");
+  const [image, setImage] = useState("");
   const navigate = useNavigate();
 
   const onSubmit = (e) => {
     e.preventDefault();
-    if (title === '' || content === '') {
-      return alert('위 아래 위위 아래 채워주세요');
+    if (title === "" || content === "") {
+      return alert("위 아래 위위 아래 채워주세요");
     }
     let body = {
       title: title,
       content: content,
+      image: image,
     };
 
     axios
-      .post('/api/post/submit', body)
+      .post("/api/post/submit", body)
       .then((res) => {
         if (res.data.success) {
-          alert('글 작성이 완료되었습니다.✔');
-          navigate('/');
+          alert("글 작성이 완료되었습니다.✔");
+          navigate("/");
         } else {
-          alert('글 작성이 실패하였습니다.❌');
+          alert("글 작성이 실패하였습니다.❌");
         }
       })
       .catch((err) => {
@@ -42,6 +45,7 @@ const Upload = (props) => {
           value={title}
           onChange={(e) => setTitle(e.target.value)}
         />
+        <ImageUpload setImage={setImage} />
         <label htmlFor="content">내용</label>
         <textarea
           id="content"
