@@ -1,11 +1,13 @@
-import { Route, Routes } from "react-router-dom";
-import "./App.css";
-import List from "./component/post/List";
-import Heading from "./component/Heading";
-import Upload from "./component/post/Upload";
+import { Route, Routes } from 'react-router-dom';
+import './App.css';
 
-import Detail from "./component/post/Detail";
-import Edit from "./component/post/Edit";
+import Heading from './Component/Heading';
+
+import Upload from './Component/Post/Upload';
+import Detail from './Component/Post/Detail';
+import List from './Component/Post/List';
+import Edit from './Component/Post/Edit';
+
 function App() {
   return (
     <>
